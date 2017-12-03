@@ -2,7 +2,7 @@
 sudo apt update
 sudo apt upgrade
 sudo apt autoremove
-sudo apt install gparted baobab dnscrypt-proxy
+sudo apt install gparted baobab dnscrypt-proxy vim curl
 #insert install zsh script here
 
 #insert nightly setup script here
