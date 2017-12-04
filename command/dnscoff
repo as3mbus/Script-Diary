@@ -1,0 +1,13 @@
+#!/bin/bash
+if [ $UID -ne 0 ]; then
+echo Non root user. Please run as root.
+else
+    echo Stopping dnscrypt-proxy
+    sudo service dnscrypt-proxy stop &>> output.txt
+    sudo service dnscrypt-proxy-resolvconf stop &>> output.txt
+    echo Disabling dnscrypt-proxy
+    sudo systemctl disable dnscrypt-proxy &>> output.txt
+    sudo systemctl disable dnscrypt-proxy-resolvconf &>> output.txt
+    exit 0
+fi
+

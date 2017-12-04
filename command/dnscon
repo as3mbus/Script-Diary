@@ -1,0 +1,8 @@
+#!/bin/bash
+sudo systemctl enable dnscrypt-proxy
+sudo systemctl enable dnscrypt-proxy-resolvconf
+sudo service dnscrypt-proxy start
+sudo service dnscrypt-proxy-resolvconf start 
+
+exit 0
+
