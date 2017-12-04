@@ -1,0 +1,17 @@
+#!/bin/bash
+# Gaming Performance Tweaker
+# Copyright 2014 Loren McGuckin
+# Distributed under the GNU General Public License v3
+# License available at https://www.gnu.org/copyleft/gpl.html
+
+# Game over, man. Game over!
+
+on_or_off="off"
+echo "-------------------------------------------------------------"
+echo "Debian/Ubuntu/Mint Gaming Performance Tweaker"
+echo "Gameoff: Run this script after finishing a gaming session."
+echo "-------------------------------------------------------------"
+source gaming_performance_tweaker
+echo "-------------------------------------------------------------"
+echo "You may now close this window."
+echo "-------------------------------------------------------------"
