@@ -1,0 +1,18 @@
+#!/bin/bash
+if [ $UID -ne 0 ]; then
+echo Non root user. Please run as root.
+else
+    echo Stopping databases
+    sudo service mysql stop &>> output.txt
+    sudo service postgresql stop &>> output.txt
+    echo Stopping apache2
+    sudo service apache2 stop &>> output.txt
+    echo Disabling databases
+    sudo systemctl disable mysql.service &>> output.txt
+    sudo systemctl disable postgresql.service &>> output.txt
+    echo Disabling apache2
+    sudo update-rc.d apache2 disable &>> output.txt
+    exit 0
+fi	
+
+

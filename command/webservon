@@ -1,0 +1,9 @@
+#!/bin/bash
+sudo update-rc.d apache2 enable
+sudo service apache2 start
+sudo systemctl enable mysql.service
+sudo service mysql start
+sudo systemctl enable postgresql.service
+sudo service postgresql start
+exit 0
+
