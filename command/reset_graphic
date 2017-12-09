@@ -1,0 +1,5 @@
+#!/bin/bash
+sudo prime-select intel
+sudo service lightdm restart
+sudo prime-select nvidia
+sudo service lightdm restart
