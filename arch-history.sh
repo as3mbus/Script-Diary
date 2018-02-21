@@ -647,3 +647,135 @@ sudo pacman -Rsn gnome-characters
 # character map to locate character availability
 sudo pacman -Syu gucharmap
 ############################ Documentation End For 2 February 2018 #######################
+###################### History Documentation 20 Feb 2018 ###################
+# remove Unity AUR without it's dependencies
+sudo pacman -Rn unity-editor
+rm -r /opt/Unity
+sudo rm -r /opt/Unity
+sudo ln -s /media/Consume/Unity/2017.3.0p2/Editor/Unity /usr/bin/unity-editor
+# install jdk
+sudo pacman -Syu jdk9-openjdk
+# install wget
+sudo pacman -Syu wget
+# read xfce terminal config file
+less .config/xfce4/terminal/terminalrc
+pidof polybar
+# configure mozilla to remove scrollbar
+cd .mozilla/firefox/hfaabbk5.default/
+mkdir chrome
+mv userChrome.css chrome
+echo hallo halo kelo $@
+echo hallo halo kelo $!
+cd
+# trying to make infinite loop but end up eating PC resources
+sh dotfiles/scripts/change_event_handler.sh echo $(whoami)
+# trying zsh brackets
+mv hello\ {world,darkness}
+# list installed font (XFT only ?)
+fc-list
+fc-list| grep awesome
+fc-list| grep Awesome
+# check linked font
+fc-match "font awesome 5 Brands:style=Regular"
+# grab default vimrc
+cp /etc/vimrc .
+vim /usr/share/vim/vimfiles/archlinux.vim
+rm vimrc
+# install compton
+sudo pacman -Syu compton
+feh --bg-scale /media/Consume/hatsune-miku-wallpaper.jpg
+# install mpd media player daemon
+sudo pacman -Syu mpd
+# install mpc client ncmpcpp
+sudo pacman -Syu ncmpcpp
+ncmpcpp
+bash .scripts/xdo_hider.sh hide Polybar
+bash .scripts/xdo_hider.sh show Polybar
+# install xorg-xev to read input from xorg
+sudo pacman -Syu xorg-xev
+xev -event
+man xev
+xev -event keyboard
+showkey
+man showkey
+xmodmap
+#configure mpd
+vim /etc/mpd.conf
+mkdir .config/mpd
+mkdir .config/mpd/playlists
+sudo systemctl status mpd.s
+sudo systemctl status mpd.service
+sudo systemctl status mpd.socket
+ncmpcpp
+# install youtube-dl to get link from youtube
+sudo pacman -Syu youtube-dl
+# install mpd client mpc 
+sudo pacman -Syu mpc
+ls -R /usr/share/fonts
+ls -R .local/share/fonts
+# find character using gucharmap
+# install vector drawing software inkscape
+sudo pacman -Syu inkscape
+# do calculation with expr
+expr 15 \* 16
+# trying i3lock
+man i3lock
+i3lock --image=/media/Consume/hatsune-miku-wallpaper.jpg
+neofetch
+#check notification
+notify-send 'Hello world!' 'This is an example notification.' --icon=dialog-information
+# trying to configure rofi use xresource instead of rofi config file
+mkdir .config/rofi
+# install dunst notification daemon
+sudo pacman -Syu dunst
+dunst
+notify-send 'Hello world!' 'This is an example notification.' --icon=dialog-information
+# get default rofi config
+rofi -dump-xresources >> .Xresources
+vim .config/mpd/mpd.conf
+vim /etc/pulse/daemon.conf
+bash mpc-add-yt-dl https://www.youtube.com/watch\?v\=OuLZlZ18APQ
+mkdir -p .config/dunst
+# default dunstrc config
+cp /usr/share/dunst/dunstrc ~/.config/dunst/dunstrc
+vim .config/dunst/dunstrc
+# add audio control to mpd conf
+vim .config/mpd/mpd.conf
+mpc volume 50
+mpc volume 80
+# disable single play
+mpc single off
+sudo pacman -Ss gconf
+# installing Unity Dependency
+pacman -Syu lib32-libstdc++5
+sudo pacman -Syu lib32-libstdc++5
+# fonts
+sudo pacman -Syu xorg-xlsfonts
+xlsfonts
+xlsfonts|grep Awesome
+# get conky config (default if there are no existing config)
+conky -C > ~/.config/cvim .config/conky/conky.conf
+# trying to modify xresource
+vim .Xresources
+kill -USR1 15161
+sudo kill -USR1 15161
+sudo gnome-disks
+cd /media/Consume/AUR
+# install woeusb to make bootable windows USB
+cd woeusb-git
+vim PKGBUILD
+makepkg -si
+woeusbgui
+sudo woeusbgui
+# install nm-applet
+sudo pacman -Syu network-manager-applet
+# install pnmixer audio applet
+cd /media/Consume/AUR/
+nm-applet
+cd pnmixer
+less PKGBUILD
+vim pnmixer.install
+makepkg -si
+pnmixer
+sudo woeusbgui
+################ DOCUMENTED 20 FEB 2018 #########################
