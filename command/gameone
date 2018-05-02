@@ -4,7 +4,7 @@ echo performance | sudo tee /sys/devices/system/cpu/cpu0/cpufreq/scaling_governo
 echo performance | sudo tee /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor
 echo performance | sudo tee /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor
 echo performance | sudo tee /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor
-xfconf-query --channel=xfwm4 --property=/general/use_compositing --set=false
+#xfconf-query --channel=xfwm4 --property=/general/use_compositing --set=false
 sudo sh -c "sync; echo 3 > /proc/sys/vm/drop_caches"
 sudo sysctl vm.swappiness=10
 
