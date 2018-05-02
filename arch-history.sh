@@ -779,3 +779,277 @@ makepkg -si
 pnmixer
 sudo woeusbgui
 ################ DOCUMENTED 20 FEB 2018 #########################
+# setup docker
+sudo pacman -Syu iptables
+sudo pacman -Syu procps-ng
+sudo pacman -Syu xz
+sudo pacman -Syu docker
+sudo usermod -aG docker,$USER
+sudo usermod -aG docker $USER
+sudo users
+sudo usermod -G
+sudo usermod -G $USER
+sudo usermod -G docker
+sudo usermod as3mbus
+docker run hello world
+sudo systemctl start docker.socket
+docker run hello world
+getent group docker
+gpasswd -a $USER docker
+sudo gpasswd -a $USER docker
+docker run hello world
+sudo systemctl status docker.service
+sudo systemctl start docker.service
+docker run hello-world
+sudo docker run hello-world
+sudo groupadd docker
+sudo usermod -a -G docker $USER
+sudo systemctl restart docker
+# done setup docker
+# install ms font and mendeley for undergrad thesis
+git clone https://aur.archlinux.org/ttf-ms-fonts.git
+mv Downloads/mendeleydesktop-1.17.13-linux-x86_64 .
+mendeleydesktop-1.17.13-linux-x86_64
+./bin/mendeleydesktop
+# done install ms font and mendeley for undergrad thesis
+xprop # grab window properties in X
+sudo pacman -Syu docker-compose
+%fg1
+fg %1
+jobs
+ps
+jobs
+kill %1
+kill %2
+kill %3
+sudo pacman -Syu obs-studio
+sudo pacman -Syu mpv
+sudo pacman -Syu docker-machine
+git log --pretty=oneline --color=always --graph
+fc-list| grep Awesome
+sudo pacman -Syu tigervnc
+neofetch --config .config/neofetch/awesome_info.conf
+sudo nethogs
+sudo pacman -Rsn gvim
+sudo pacman -Syu neovim
+sudo pacman -Syu gvim
+sudo pacman -Syu ranger
+ranger
+ldd bash # ldd print shared object dependencies
+ldd /bin/bash
+sudo pacman -Syu qutebrowser
+qutebrowser
+xhost +
+xhost -
+xrandr
+ip link 
+ps -mem
+
+
+
+# install tldr bash
+mkdir -p ~/bin
+curl -o ~/bin/tldr https://raw.githubusercontent.com/raylee/tldr/master/tldr
+chmod +x ~/bin/tldr
+mv bin .local
+source .profile
+# done instal tldr bash_completion
+# install desk
+curl https://raw.githubusercontent.com/jamesob/desk/master/desk > ~/.local/bin/desk
+chmod +x ~/.local/bin/desk
+# done install desk
+# install how2
+npm install -g how2
+## install NVM to install node
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
+export NVM_DIR="$HOME/.nvm"\n[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm\n[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion\n
+nvm ls-remote
+nvm install v8.9.4
+nvm use v8.9.4
+npm install -g how2
+sudo pacman -Syu pass
+nvm use v8.9.4
+how2 read file
+npm install -g how2
+how2 read file
+npm rm how2
+npm rm -g how2
+npm install -g how-2
+realpath ~
+realpath .scripts
+how2 default shell value
+how2 hide output shell
+xset fp rehash 
+fc-cache -fv
+bash install_font.sh .local/share/fonts/otf
+# install vifm file manager
+sudo pacman -Syu vifm
+# install xdf user dirs to create downloads, doc , etc folder
+sudo pacman -Syu xdg-user-dirs
+xdg-user-dirs-update
+zsh --login
+source .zshrc
+# install steam
+sudo pacman -Ss steam
+sudo pacman -Syu steam
+sudo pacman -Syu libxtst 
+sudo pacman -Syu libxrandr
+sudo systemctl restart NetworkManager
+sudo systemctl status NetworkManager
+xinput
+xtrace
+xev
+# install Unity3D 2017.3.1f1
+Downloads/UnitySetup-2017.3.1f1
+unity-editor
+unity-editor -logfile
+sudo pacman -Sc
+sudo pacman -Syu mono
+# setup omnisharp autocomplete for csharp in vim
+git clone https://github.com/OmniSharp/omnisharp-vim.git
+git submodule update --init --recursive
+sudo pacman -Syu ncurses
+sudo pacman -Sy ncurses
+xbuild
+sudo pacman -Rsn ncurses
+bash
+TERM=xterm xbuild
+rm -r ~/.vim/bundle
+TERM=xterm xbuild
+git config --global alias.glog 'log --pretty=oneline --color=always --graph --all'
+git glog
+git rev-parse --show-toplevel
+git config --global alias.root 'git rev-parse --show-toplevel'
+git config --global alias.root 'rev-parse --show-toplevel'
+sudo pacman -Syu nvidia
+sudo pacman -Rsn nvidia
+sudo pacman -Syu steam
+steam-runtime
+sudo pacman -Syu lib32-nvidia-utils
+tldr i3lock
+chmod +x .scripts/screenlock.sh
+# install gksu
+sudo pacman -Syu gksu
+gksu nautilus
+# install SLIM display manager (fail because nvidia)
+sudo pacman -Syu slim
+sudo systemctl start slim.service
+sudo systemctl status slim.service
+sudo vim /etc/slim.conf
+# install WINE
+sudo pacman -Syu wine
+sudo pacman -Syu lib32-freetype2
+sudo pacman -Syu wine
+# update rambox
+readlink rambox
+ln -s /media/Consume/Rambox-0.5.16-x64.AppImage newlink
+sudo ln -s /media/Consume/Rambox-0.5.16-x64.AppImage newlink
+mv -T newlink rambox
+sudo mv -T newlink rambox
+sudo pacman -Syu winetricks
+sudo pacman -Syu 
+sudo pacman -Syu winetricks
+WINEPREFIX=/media/Consume/wineprefixes/Osu\! wineconsole
+wineserver --help
+WINEPREFIX=/media/Consume/wineprefixes/Osu\! wine taskmgr
+wineserver -kh
+wineserver -h
+WINEPREFIX=/media/Consume/wineprefixes/Osu\! wineserver -k
+WINEPREFIX=/media/Consume/wineprefixes/Osu\! wine /media/Consume/Osu\!/osu\!.exe
+task
+# install mono and gecko (might not needed afterall)
+sudo pacman -Syu wine_gecko
+sudo pacman -Syu wine-mono
+# install samba for connecting linux and WINE internet network
+sudo pacman -Syu samba
+sudo pacman -Syu lib32-gnutls
+sudo pacman -Ss gnutls
+sudo pacman -Syu gnutls
+loginctl show-session $XDG_SESSION_ID
+sudo systemctl status slim.service
+nvidia-xconfig -o /home/as3mbus/xorg.conf.nvidia
+sudo nvidia-xconfig -o /home/as3mbus/xorg.conf.nvidia
+sudo systemctl edit slim.service
+sudo vim /etc/slim.conf
+sudo vim /etc/X11/xorg.conf.d/20-nvidia.conf
+# remove slim install lxdm
+sudo pacman -Rsn
+sudo pacman -Rsn slim
+sudo pacman -Syu lxdm
+sudo vim /etc/lxdm/LoginReady
+sudo systemctl start lxdm.service
+sudo vim /etc/lxdm/Xsession
+sudo vim /etc/X11/xinit/xinitrc.d/40-libcanberra-gtk-module.sh
+sudo vim /etc/X11/xinit/xinitrc.d/20-nvidia.sh
+sudo vim /etc/lxdm/lxdm.conf
+# install lightdm
+sudo pacman -Syu lightdm
+sudo vim /etc/lightdm/display_setup.sh
+sudo chmod +x /etc/lightdm/display_setup.sh
+sudo systemctl start lightdm.service
+sudo vim /etc/lightdm/lightdm.conf
+sudo systemctl list-units
+# install additional greeter for lightdm
+sudo pacman -Syu lightdm-gtk-greeter
+sudo vim /etc/lightdm/lightdm.conf
+# install w3m line based browser
+sudo pacman -Syu w3m
+w3m duckduckgo.com
+chmod +x /etc/X11/xinit/xinitrc.d/20-nvidia.sh 
+sudo chmod +x /etc/X11/xinit/xinitrc.d/20-nvidia.sh 
+sudo systemctl start lxdm.service
+sudo systemctl stop lxdm.service
+# install IRSSI IRC client in terminal
+sudo pacman -Syu irssi
+irssi
+lsblk
+lsusb
+dmesg |grep tty
+# install plasma
+sudo pacman -Syu plasma-desktop
+sudo pacman -Syu spectacle
+plasmashell --help
+plasmashell --version
+unity-editor -logfile
+bash reset_unity3d.sh
+sudo bash reset_unity3d.sh
+# update Unity in /usr/share/bin
+readlink /usr/bin/unity-editor
+sudo ln -s /media/Consume/Unity/2017.3.1f1/Editor/Unity /usr/bin/newunitylink
+mv -T /usr/bin/newunitylink /usr/bin/unity-editor
+sudo mv -T /usr/bin/newunitylink /usr/bin/unity-editor
+unity-editor
+# install thunderbird (extract only)
+tar -xvf thunderbird-60.0b1.tar.bz2
+mv thunderbird /media/Consume
+./thunderbird
+# install libinput gesture
+sudo gpasswd --add $USER input
+sudo pacman -Syu 
+git clone https://aur.archlinux.org/libinput-gestures.git
+sudo pacman -Syu xdotool wmctrl
+makepkg -si 
+libinput-gestures-setup start
+
+# install volume mixer for plasma desktop
+git clone https://aur.archlinux.org/plasma5-applets-volumewin7mixer.git
+makepkg -si 
+# install peek
+https://aur.archlinux.org/peek.git
+git clone https://aur.archlinux.org/peek.git
+makepkg -si 
+# keyboard error uninstalling peek and libinput gesture
+sudo pacman -Rsn peek
+sudo pacman -Rsn libinput-gestures
+sudo pacman -Syu
+unity-editor -logfile
+bash ./reset_unity3d.sh
+sudo bash ./reset_unity3d.sh
+# install chromium for granblufantasy
+sudo pacman -Syu chromium
+# install libxml inkscape asked
+sudo pacman -Syu libxml2
+# access X from other tty
+export DISPLAY=:0
+xset
+##### DOCUMENTED 12 April 2018 
