@@ -1,0 +1,2 @@
+#!/bin/bash
+mpc add $(youtube-dl -g -f251 $1 )
